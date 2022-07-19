@@ -11,9 +11,11 @@ app.get('/notas', (req, res)=>{
 res.status(200).send("Hola usuario")
 })
 
+app.get('/notasList',controller.list)
+
 app.post('/notas',controller.create)
 
-app.delete('/notas:id')
+app.delete('/notas/:id',controller.delete)
 
 app.use(express.static('app'))
 
