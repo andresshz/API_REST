@@ -4,7 +4,7 @@ const mongoose = require('mongoose')
 const app = express()
 const port = 3000
 
-mongoose.connect('mongodb+srv://andres_mgDB:150193vasquezFV04@andrescluster.wkcwf.mongodb.net/miapp?retryWrites=true&w=majority')
+mongoose.connect('conect')
 app.use(express.json())
 
 app.get('/notas', (req, res)=>{
